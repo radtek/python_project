@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_main</class>
+ <widget class="QWidget" name="w_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>本地服务监控程序[Blrise]</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.ico</normaloff>logo.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <widget class="QSplitter" name="splitter_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>96</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="text">
+     <string>服务状态：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_status">
+    <property name="font">
+     <font>
+      <family>宋体</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>未启动</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_save">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>120</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>75</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_stop">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>停止服务</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自动启动服务</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_stop</tabstop>
+  <tabstop>pushButton_save</tabstop>
+  <tabstop>pushButton_close</tabstop>
+  <tabstop>checkBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_close</sender>
+   <signal>clicked()</signal>
+   <receiver>w_main</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>165</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
